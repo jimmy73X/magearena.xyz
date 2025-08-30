@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Mage Arena</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007AFF',
+                        secondary: '#5856D6',
+                        dark: '#1C1C1E',
+                        light: '#F5F5F7',
+                        accent: '#FF375F',
+                        info: '#32ADE6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0F0F1B 0%, #1C1C2E 100%);
+            color: #E6E6E6;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(87, 86, 214, 0.2), transparent 70%),
+                        radial-gradient(ellipse at bottom, rgba(255, 55, 95, 0.15), transparent 70%);
+        }
+        
+        .card-gradient {
+            background: rgba(28, 28, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #007AFF 0%, #5856D6 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(88, 86, 214, 0.4);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #007AFF 0%, #5856D6 100%);
+            border-radius: 3px;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #007AFF;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .terms-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .terms-section h2 {
+            color: #007AFF;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .terms-section ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .terms-section ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .terms-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .terms-section a {
+            color: #007AFF;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header with Navigation -->
+    <header class="fixed w-full z-50 py-4 px-4 sm:px-8 bg-opacity-90 bg-dark backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mr-3">
+                    <i class="fas fa-hat-wizard text-white text-xl"></i>
+                </div>
+                <span class="text-white font-bold text-xl">Mage Arena</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-white hover:text-primary transition">Home</a>
+                <a href="privacy.html" class="nav-link text-white hover:text-primary transition">Privacy</a>
+                <a href="terms.html" class="nav-link text-primary transition">Terms</a>
+            </nav>
+            
+            <a href="https://store.steampowered.com/app/3716600/Mage_Arena/" target="_blank" class="btn-primary text-white font-semibold py-2 px-6 rounded-full">
+                Get on Steam
+            </a>
+        </div>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <section class="hero-gradient pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="card-gradient p-8 md:p-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-6 section-title">Terms of Service</h1>
+                <div class="text-gray-400 mb-8">Last updated: August 30, 2023</div>
+                
+                <div class="terms-content">
+                    <div class="terms-section">
+                        <p>
+                            Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Mage Arena website (the "Service") operated by Mage Arena ("us", "we", or "our").
+                        </p>
+                        <p>
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Service.
+                        </p>
+                        <p>
+                            By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+                        </p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">1. Accounts</h2>
+                        <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+                        <p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+                        <p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">2. Intellectual Property</h2>
+                        <p>The Service and its original content, features, and functionality are and will remain the exclusive property of Mage Arena and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries.</p>
+                        <p>Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Mage Arena.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">3. Links To Other Web Sites</h2>
+                        <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Mage Arena.</p>
+                        <p>Mage Arena has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Mage Arena shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+                        <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">4. Termination</h2>
+                        <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                        <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">5. Limitation of Liability</h2>
+                        <p>In no event shall Mage Arena, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from:</p>
+                        <ol>
+                            <li>your access to or use of or inability to access or use the Service;</li>
+                            <li>any conduct or content of any third party on the Service;</li>
+                            <li>any content obtained from the Service; and</li>
+                            <li>unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">6. Disclaimer</h2>
+                        <p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.</p>
+                        <p>Mage Arena its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">7. Governing Law</h2>
+                        <p>These Terms shall be governed and construed in accordance with the laws of the United States, without regard to its conflict of law provisions.</p>
+                        <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">8. Changes to Terms</h2>
+                        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                        <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">9. Game-Specific Terms</h2>
+                        <p>In addition to the general terms above, the following terms apply specifically to Mage Arena gameplay:</p>
+                        <ol>
+                            <li>You agree not to use any third-party software or hardware to gain an unfair advantage in the game.</li>
+                            <li>You understand that voice data is processed for spell recognition but not stored on our servers.</li>
+                            <li>You agree not to exploit bugs or glitches in the game and to report them to our support team.</li>
+                            <li>You acknowledge that in-game purchases are final and non-refundable, except where required by law.</li>
+                            <li>You agree to behave respectfully toward other players and not engage in harassment, hate speech, or other toxic behavior.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="terms-section">
+                        <h2 class="text-2xl font-bold text-white mt-8 mb-4">10. Contact Us</h2>
+                        <p>If you have any questions about these Terms, please contact us at:</p>
+                        <p>Email: support@magearena.xyz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mr-3">
+                        <i class="fas fa-hat-wizard text-white text-xl"></i>
+                    </div>
+                    <span class="text-white font-bold text-xl">Mage Arena</span>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-steam text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-discord text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-gray-500 text-sm">
+                    <p>&copy; 2023 Mage Arena. All rights reserved.</p>
+                    <p>Developed by jrsjams | Early Access Game</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p class="flex justify-center space-x-6">
+                    <a href="privacy.html" class="hover:text-primary">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-primary">Terms of Service</a>
+                    <a href="support.html" class="hover:text-primary">Support</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
